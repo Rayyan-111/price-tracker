@@ -87,8 +87,6 @@ df["price"] = (
 
 df["price"] = pd.to_numeric(df["price"], errors="coerce")
 
-conn.close()
-
 
 print("\nPRICE HISTORY")
 print("=" * 70)
@@ -160,3 +158,5 @@ for title, group in df.groupby("title"):
                 )
 
                 conn.commit()
+
+conn.close()

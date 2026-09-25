@@ -1,4 +1,21 @@
-.env
+# Virtual environment
 .venv/
+venv/
+
+# Environment variables
+.env
+
+# Python cache
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Logs
+*.log
+
+# SQLite database
+*.db
+*.sqlite
+*.sqlite3
+
+# OS files
+.DS_Store

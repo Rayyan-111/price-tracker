@@ -1,18 +1,19 @@
 # Price Tracker & Telegram Alert System
 
-A Python-based product price tracking system that monitors product prices, stores price history in SQLite, detects significant price drops, and sends Telegram alerts automatically.
+**A Python-based product price tracking system that monitors product prices, stores price history in SQLite, detects significant price drops, and sends Telegram alerts automatically.**
 
 ## Features
 
-- Product price scraping
-- SQLite price-history database
-- Automatic price-drop detection
-- Configurable drop threshold
-- Telegram notifications
-- Duplicate alert prevention
-- Automatic execution using Linux Cron
-- Price and availability tracking
-- Logging for scraper and tracker
+- **Product price scraping**
+- **SQLite price-history database**
+- **Automatic price-drop detection**
+- **Configurable drop threshold**
+- **Telegram notifications**
+- **Duplicate alert prevention**
+- **Automatic execution using Linux Cron**
+- **Price and availability tracking**
+- **Logging for scraper and tracker**
+
 
 ## Project Flow
 
@@ -31,8 +32,10 @@ Product Website
       ↓
  User
 
- ## Project Structure 
+```
+##  Project Structure 
 
+```text
  price-tracker/
 │
 ├── scraper.py        # Scrapes product information
@@ -45,19 +48,20 @@ Product Website
 ├── .gitignore
 └── README.md
 
+```
+
 ## Requirements
-Python 3
-pip
-SQLite
-Linux/macOS
-Telegram Bot
+- **Python 3**
+- **pip**
+- **SQLite**
+- **Linux/macOS**
+- **Telegram Bot**
 
 ## Price Drop Detection
-The system calculates:
-Drop Amount = Old Price - New Price
+**The system calculates:**  
+  **Drop Amount = Old Price - New Price**
 
-Drop % = (Drop Amount / Old Price) × 100
-A Telegram alert is generated when the price drop reaches the configured threshold.
+**A Telegram alert is generated when the price drop reaches the configured threshold.**
 
 ## Telegram Alert
 Example:
@@ -65,43 +69,53 @@ Example:
 
 Product: TEST ALERT
 
-Old Price: ₹100.00
-New Price: ₹95.00
-Drop: ₹5.00
-Drop %: 5.00%
-The system also prevents repeated alerts for the same price.
+- **Old Price: ₹100.00**
+- **New Price: ₹95.00**
+- **Drop: ₹5.00**
+- **Drop %: 5.00%**
+  
+## Telegram Alert
+
+The system automatically sends a Telegram notification when a significant price drop is detected.
+
+![Telegram Alert Demo](assets/telegram_demo.png)
 
 ## Database
+
 The project uses SQLite to store:
-Product title
-Price
-Availability
-Scraping timestamp
-Previous price
-New price
-Price-drop amount
-Price-drop percentage
-Alert timestamp
+
+- **Product title**
+- **Price**
+- **Availability**
+- **Scraping timestamp**
+- **Previous price**
+- **New price**
+- **Price-drop amount**
+- **Price-drop percentage**
+- **Alert timestamp**
 
 ## Technologies Used
-Python
-SQLite
-Pandas
-Requests / Web Scraping
-Telegram Bot API
-Linux Cron
-Git
+
+- **Python**
+- **SQLite**
+- **Pandas**
+- **Requests / Web Scraping**
+- **Telegram Bot API**
+- **Linux Cron**
+- **Git**
 
 ## Future Improvements
-Multiple product support
-Web dashboard
-Price charts
-Email notifications
-WhatsApp notifications
-Multiple Telegram users
-Historical price analytics
-Docker deployment
-Cloud deployment
+
+- **Multiple product support**
+- **Web dashboard**
+- **Price charts**
+- **Email notifications**
+- **WhatsApp notifications**
+- **Multiple Telegram users**
+- **Historical price analytics**
+- **Docker deployment**
+- **Cloud deployment**
 
 ## Author
-Built as a Python automation project for real-world price monitoring and notification.
+
+**Built as a Python automation project for real-world price monitoring and notification.**
